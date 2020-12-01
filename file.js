@@ -4,7 +4,7 @@ if (new Date().getTime()%2){
 db.connect();}
 
 
-function(){
+function leerDesdeDB   (){
 try{Utils.disableAll();
 const id = prompt('ID a leer:');
 const data = db.read(id);
@@ -20,14 +20,14 @@ return null;}finally{Utils.enableAll();}}
 
 function btnLeer() {
   try{
-  const data = ();
+  const data = leerDesdeDB   ();
   console.info('Resultado:', data);}
-  catch(err){  alert('Error al leer desde DB');
+                 catch(err){  alert('Error al leer desde DB');
   alert(`Error al leer desde DB\n\n\t${err.message}`);
 
-  console.warn('Error al leer desde DB',err);}}
+console.warn('Error al leer desde DB',err);}}
 
-function btnConectar() {
+  function btnConectar() {
   try{
   Utils.disableAll();
      db.connect();
@@ -38,9 +38,10 @@ function btnConectar() {
 
   console.warn('Error al conectar',err);}
 finally{Utils.enableAll();}}
-
-
   function btnCargar() {
+
+
+
 
  try{
   Uils.disableAll();
@@ -52,10 +53,9 @@ finally{Utils.enableAll();}}
    alert(`Error al cargar!\n\n\t${err.message}`)
    console.warn('Error al cargar',err);
  } finally
- {Utils.enableAll();}
- }
+ {Utils.enableAll();}   }
 
- function btnDesconectar() {
+    function btnDesconectar() {
   try{
    Utils.disableAll();
    db.close();
