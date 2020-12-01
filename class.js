@@ -5,6 +5,13 @@ color='negro';peso   =    34;
   {
     console.info(`Color: ${this.color}. Peso: ${this.peso}`
     );
+// foo = 123;
+/*
+// Prueba
+test() {
+  console.info('Test');
+}
+*/
 }
    }    class Bar   {
   miMetodo(){if(this.imprimir){console.info('Imprimir!');}}
