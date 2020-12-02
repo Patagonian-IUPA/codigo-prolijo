@@ -16,7 +16,7 @@ eliminar cualquier código comentado, pero no los comentarios descriptivos.
 
 ### Documentación de referencia
 
-- [ESLint](https://eslint.org/)
+- [Prettier VS Code Plugin](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [Coding Conventions](https://developer.mozilla.org/en-US/docs/MDN/Guidelines/Code_guidelines/JavaScript)
 - [From Google](https://google.github.io/styleguide/jsguide.html)
 
