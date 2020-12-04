@@ -1,6 +1,6 @@
 const db = new BaseDatos();
 // para prueba de no conectado
-if(new Date().getTime()%2) {
+if (new Date().getTime() % 2) {
   db.connect();
 }
 
@@ -25,7 +25,7 @@ function leerDesdeDB() {
 
 function btnLeer() {
   try {
-    const data = leerDesdeDB   ();
+    const data = leerDesdeDB();
     console.info('Resultado:', data);
   }
   catch(err) {
