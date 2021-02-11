@@ -15,7 +15,7 @@ function leerDesdeDB() {
   } catch(err) {  // error
     alert(`Error- Vuelva a ingresar el ID a leer!\n\n\t${err.message}`);
     console.warn('Error- Vuelva a ingresar el ID a leer', err);
-    //se vuelve a habilitar el boton
+    // se vuelve a habilitar el boton
     return null;
   } finally {
     Utils.enableAll();
@@ -29,7 +29,7 @@ function btnLeer() {
   } catch(err) {
     alert('Error al leer desde DB');
     alert(`Error al leer desde DB\n\n\t${err.message}`);
-    console.warn('Error al leer desde DB',err);
+    console.warn('Error al leer desde DB', err);
   }
 }
 
@@ -40,7 +40,7 @@ function btnConectar() {
   } catch(err) {
     alert('Error al conectar');
     alert(`Error al conectar\n\n\t${err.message}`);
-    console.warn('Error al conectar',err);
+    console.warn('Error al conectar', err);
   } finally {
     Utils.enableAll();
   }
@@ -54,7 +54,7 @@ function btnCargar() {
     db.save(id, dato);
   } catch(err) {
     alert(`Error al cargar!\n\n\t${err.message}`)
-    console.warn('Error al cargar',err);
+    console.warn('Error al cargar', err);
   } finally {
     Utils.enableAll();
   }   
@@ -66,7 +66,7 @@ function btnDesconectar() {
     db.close();
   } catch(err) {
     alert(`Error al Desconectar\n\n\t${err.message}`)
-    console.warn('Error al Desconectar',err);
+    console.warn('Error al Desconectar', err);
   } finally {
     Utils.enableAll();
   }

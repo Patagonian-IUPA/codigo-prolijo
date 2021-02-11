@@ -3,12 +3,12 @@ class Foo {
   peso = 34;
   ver() {
     console.info(`Color: ${this.color}. Peso: ${this.peso}`);
-  /*
-  // Prueba
-  test() {
-    console.info('Test');
-  }
-  */
+    
+    // Prueba
+    test() {
+      console.info('Test');
+    }
+    
   }
 }
 
