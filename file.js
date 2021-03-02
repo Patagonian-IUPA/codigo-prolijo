@@ -1,7 +1,7 @@
 const db = new BaseDatos();
 // para prueba de no conectado
 if (new Date().getTime() % 2) {
-  db.connect ();
+  db.connect();
 }
 
 function leerDesdeDB() {
@@ -14,7 +14,7 @@ function leerDesdeDB() {
   } 
   catch (err) {
     alert(`Error- Vuelva a  ingresar el ID a leer! \n\n\t ${err.message}`);
-    console.warn ('Error- Vuelva a  ingresar el ID a leer', err);
+    console.warn('Error- Vuelva a  ingresar el ID a leer', err);
     // se vuelve a habilitar el boton
     return null;
   }
