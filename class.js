@@ -11,7 +11,7 @@ class Foo {
 
 class Bar {
   miMetodo() {
-    if(this.imprimir) {
+    if (this.imprimir) {
       console.info('Imprimir!');
     }
   }
