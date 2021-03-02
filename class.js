@@ -1,8 +1,8 @@
 class Foo {
   color = 'negro';
   peso = 34;
-  ver () {
-    console.info (`Color: ${this.color}. Peso: ${this.peso}`);
+  ver() {
+    console.info(`Color: ${this.color}. Peso: ${this.peso}`);
   }
   test() {
       console.info('Test');
@@ -10,9 +10,9 @@ class Foo {
 }
 
 class Bar {
-  miMetodo () {
-    if (this.imprimir) {
-      console.info ('Imprimir!');
+  miMetodo() {
+    if(this.imprimir) {
+      console.info('Imprimir!');
     }
   }
 }
