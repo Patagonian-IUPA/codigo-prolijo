@@ -12,10 +12,10 @@ function leerDesdeDB() {
     Utils.enableAll();
     return data;
   }
-  catch(err) {// error
+  catch(err) { // error
     alert(`Error- Vuelva a  ingresar el ID a leer!\n\n\t${err.message}`);
     console.warn('Error- Vuelva a  ingresar el ID a leer',err);
-    //se vuelve a habilitar el boton
+    // se vuelve a habilitar el boton
     return null;
   }
   finally {

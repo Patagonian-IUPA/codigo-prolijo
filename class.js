@@ -7,7 +7,7 @@ class Foo {
 }
 
 class Bar {
-  miMetodo(){
+  miMetodo() {
     if (this.imprimir) {
       console.info('Imprimir!');
     }
